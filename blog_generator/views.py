@@ -72,7 +72,7 @@ def download_audio(link):
 
 def get_transcription(link):
     audio_file = download_audio(link)
-    aai.settings.api_key = "Insert you Assmbly AI key here"
+    aai.settings.api_key = "Insert your Assmebly AI key here"
     transcriber = aai.Transcriber()
     transcript = transcriber.transcribe(audio_file)
     os.remove(audio_file)
@@ -80,7 +80,7 @@ def get_transcription(link):
 
 
 def generate_blog_from_transcription(transcription):
-    openai.api_key = "Insert you OpenAI key here"
+    openai.api_key = "Insert your OpenAI key here"
     prompt = f"Based on the following transcript from a YouTube video, write a comprehensive blog article of 250-350 words, write it based on the transcript, but dont make it look like a youtube video, make it look like a proper blog article:\n\n{transcription}\n\nArticle:"
     response = openai.completions.create(
         model = "gpt-3.5-turbo-instruct",
