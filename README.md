@@ -1,8 +1,8 @@
 # AI Blog Generator Project
 
-- The AI Blog Generator is a Django-based web application designed to simplify the process of
-- creating blog articles using OpenAI's language model. This project integrates user
-- registration and login functionalities, providing a personalized experience for content generation.
+ The AI Blog Generator is a Django-based web application designed to generate a blog post 
+ from a YouTube video link using OpenAI's language model. This project integrates user
+ registration and login functionalities, providing a personalized experience for content generation.
 
 ## Features
 
@@ -18,7 +18,6 @@
 - **PostgreSQL**
 - **HTML/JavaScript**
 - **Tailwind CSS**
-- **Git/GitHub**
 - **OpenAI**
 - **Assembly AI**
 
